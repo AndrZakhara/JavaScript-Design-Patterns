@@ -16,18 +16,6 @@ class EventObserver {
     }
 }
 
-// const observer = new EventObserver();
-
-// observer.subscribe(data => {
-//     console.log('subscribe for module 1 fired', data)
-// });
-//
-// observer.subscribe(data => {
-//     console.log('subscribe for module 2 fired', data)
-// });
-//
-// observer.broadcast({someData: 'hello'});
-
 const blogObserver = new EventObserver();
 
 const textField = document.querySelector('.textField');
