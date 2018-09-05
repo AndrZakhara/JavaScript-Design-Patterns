@@ -1,22 +1,16 @@
 # JavaScript-Design-Patterns
 
-Типы шаблонов и примеры некоторых из них.
-Порождающие шаблоны (Creational). Cоздание новых объектов:
- - Конструктор (Constructor)
- - Модульный (Module)
- - Фабричный метод (Factory)
- - Одиночка (Singleton)
+        Pattern Module - инкапсулирует состояние, структуру и любую приватную информацию объекта.
 
-Структурные шаблоны(Structural). Упорядочивают объекты:
- - Декоратор(Decorator)
- - Фасад (Facade)
+        (function() {
 
-Поведенческие (Behavioral). Как объекты соотносятся друг с другом:
- - Наблюдатель(Observer)
- - Посредник(Mediator)
- - Команда(Command)
+             var message = "Hi!";
 
-Ссылки на статьи:
-https://medium.com/@marina.kovalyova/java-script-design-patterns-569c627d25f9
+             function showMessage() {
 
-https://proglib.io/p/javascript-patterns/
+             console.log( message );
+        }
+
+        showMessage();
+
+        })();

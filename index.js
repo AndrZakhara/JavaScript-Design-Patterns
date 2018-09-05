@@ -1,13 +1,3 @@
-// (function() {
-//     var message = "Hi!";
-//
-//     function showMessage() {
-//         console.log( message );
-//     }
-//
-//     showMessage();
-// })();
-
 let CartModule = (function() {
     let  sum = 0;
     const goods = [];
