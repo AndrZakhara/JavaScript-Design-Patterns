@@ -1,22 +1,13 @@
 # JavaScript-Design-Patterns
 
-Типы шаблонов и примеры некоторых из них.
-Порождающие шаблоны (Creational). Cоздание новых объектов:
- - Конструктор (Constructor)
- - Модульный (Module)
- - Фабричный метод (Factory)
- - Одиночка (Singleton)
+Декоратор – приём программирования, который позволяет взять существующую функцию и изменить/расширить ее поведение.
 
-Структурные шаблоны(Structural). Упорядочивают объекты:
- - Декоратор(Decorator)
- - Фасад (Facade)
+Декоратор получает функцию и возвращает обертку, которая делает что-то своё «вокруг» вызова основной функции.
 
-Поведенческие (Behavioral). Как объекты соотносятся друг с другом:
- - Наблюдатель(Observer)
- - Посредник(Mediator)
- - Команда(Command)
+Пример функции декоратора bind:
 
-Ссылки на статьи:
-https://medium.com/@marina.kovalyova/java-script-design-patterns-569c627d25f9
-
-https://proglib.io/p/javascript-patterns/
+function bind(func, context) {
+  return function() {
+    return func.apply(context, arguments);
+  };
+}
